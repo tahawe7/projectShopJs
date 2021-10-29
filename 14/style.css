@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  background-color: #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  width: 400px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+ul li {
+  width: 60px;
+  height: 60px;
+  border: 2px solid transparent;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+ul li[data-color="red"] {
+  background-color: red;
+}
+ul li[data-color="green"] {
+  background-color: green;
+}
+ul li[data-color="blue"] {
+  background-color: blue;
+}
+ul li[data-color="black"] {
+  background-color: black;
+}
+ul li.active,
+ul li:hover {
+  opacity: 1;
+}
+.experiment {
+  width: 600px;
+  height: 600px;
+  margin: 20px auto;
+  background-color: red;
+  border-radius: 50%;
+}

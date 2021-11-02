@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins";
+}
+.c1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.parent {
+  width: 400px;
+  height: 400px;
+  background-color: #eee;
+  margin: 50px auto;
+  position: relative;
+}
+.parent span {
+  position: absolute;
+}
+.parent .x-ax {
+  top: -35px;
+  left: 20px;
+  font-weight: bold;
+  font-size: large;
+}
+.parent .x-ax::before {
+  content: "";
+  width: 200px;
+  height: 4px;
+  position: absolute;
+  background-color: #009688;
+  left: 75px;
+  top: 12.5px;
+}
+.parent .x-ax::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #009688;
+  position: absolute;
+  right: -364%;
+  top: 55%;
+  transform: translateY(-50%);
+  clip-path: polygon(0 0, 50% 50%, 0 100%);
+}
+.parent .y-ax {
+  top: 20px;
+  left: -35px;
+  font-weight: bold;
+  font-size: large;
+  writing-mode: vertical-lr;
+}
+.parent .y-ax::before {
+  content: "";
+  width: 4px;
+  height: 200px;
+  position: absolute;
+  background-color: #009688;
+  left: 11px;
+  top: 75px;
+}
+.parent .y-ax::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #009688;
+  position: absolute;
+  right: -364%;
+  top: 55%;
+  transform: translateY(-50%);
+  clip-path: polygon(0 0, 50% 50%, 0 100%);
+}
